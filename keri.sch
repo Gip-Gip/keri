@@ -1,0 +1,861 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:keri
+LIBS:switches
+LIBS:keri-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "κερί"
+Date "01/24/2018"
+Rev "2"
+Comp ""
+Comment1 "Authored by Charles Thompson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_Small C7
+U 1 1 5A6F3BD0
+P 9150 4900
+F 0 "C7" H 9160 4970 50  0000 L CNN
+F 1 "4.7u" H 9160 4820 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 9150 4900 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fg_en-775693.pdf" H 9150 4900 50  0001 C CNN
+	1    9150 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5A6F3C9B
+P 8850 4900
+F 0 "C6" H 8860 4970 50  0000 L CNN
+F 1 "0.1u" H 8860 4820 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 8850 4900 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/427/kvseries-1097555.pdf" H 8850 4900 50  0001 C CNN
+	1    8850 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L VEE #PWR01
+U 1 1 5A6F3D9D
+P 9000 4700
+F 0 "#PWR01" H 9000 4550 50  0001 C CNN
+F 1 "VEE" H 9000 4850 50  0000 C CNN
+F 2 "" H 9000 4700 50  0001 C CNN
+F 3 "" H 9000 4700 50  0001 C CNN
+	1    9000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 5A6F3DD0
+P 9000 5100
+F 0 "#PWR02" H 9000 4850 50  0001 C CNN
+F 1 "Earth" H 9000 4950 50  0001 C CNN
+F 2 "" H 9000 5100 50  0001 C CNN
+F 3 "" H 9000 5100 50  0001 C CNN
+	1    9000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 5A6F4034
+P 8600 3600
+F 0 "C5" H 8610 3670 50  0000 L CNN
+F 1 "4.7u" H 8610 3520 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 8600 3600 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fg_en-775693.pdf" H 8600 3600 50  0001 C CNN
+	1    8600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 5A6F40A3
+P 8300 3600
+F 0 "C4" H 8310 3670 50  0000 L CNN
+F 1 "0.1u" H 8310 3520 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 8300 3600 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/427/kvseries-1097555.pdf" H 8300 3600 50  0001 C CNN
+	1    8300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR03
+U 1 1 5A6F4166
+P 8450 3800
+F 0 "#PWR03" H 8450 3650 50  0001 C CNN
+F 1 "VDD" H 8450 3950 50  0000 C CNN
+F 2 "" H 8450 3800 50  0001 C CNN
+F 3 "" H 8450 3800 50  0001 C CNN
+	1    8450 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A6F4352
+P 3800 3250
+F 0 "R4" V 3880 3250 50  0000 C CNN
+F 1 "1k" V 3800 3250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3730 3250 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/219/MOS-16613.pdf" H 3800 3250 50  0001 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-3 J2
+U 1 1 5A6F489E
+P 2950 3350
+F 0 "J2" H 2900 3525 50  0000 C CNN
+F 1 "Audio In" H 3050 3280 50  0000 C CNN
+F 2 "footprints:audio_in_panel" H 3200 3450 50  0001 C CNN
+F 3 "" H 3200 3450 50  0001 C CNN
+	1    2950 3350
+	1    0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A6F4932
+P 3400 3300
+F 0 "R2" V 3480 3300 50  0000 C CNN
+F 1 "2.2k" V 3400 3300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3330 3300 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/219/MOS-16613.pdf" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A6F4974
+P 3400 3500
+F 0 "R3" V 3480 3500 50  0000 C CNN
+F 1 "2.2k" V 3400 3500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3330 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/219/MOS-16613.pdf" H 3400 3500 50  0001 C CNN
+	1    3400 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5A6F54D6
+P 3250 3850
+F 0 "RV1" V 3075 3850 50  0000 C CNN
+F 1 "10k Offset" V 3150 3850 50  0000 C CNN
+F 2 "footprints:3362S-1-103LF" H 3250 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/54/362-776956.pdf" H 3250 3850 50  0001 C CNN
+	1    3250 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VDD #PWR04
+U 1 1 5A6F5522
+P 3050 3800
+F 0 "#PWR04" H 3050 3650 50  0001 C CNN
+F 1 "VDD" H 3050 3950 50  0000 C CNN
+F 2 "" H 3050 3800 50  0001 C CNN
+F 3 "" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 5A6F558F
+P 3400 3850
+F 0 "#PWR05" H 3400 3600 50  0001 C CNN
+F 1 "Earth" H 3400 3700 50  0001 C CNN
+F 2 "" H 3400 3850 50  0001 C CNN
+F 3 "" H 3400 3850 50  0001 C CNN
+	1    3400 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LT1260 U2
+U 2 1 5A6F5982
+P 4200 5050
+F 0 "U2" H 4350 5050 60  0000 C CNN
+F 1 "LT1260" H 4400 5300 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 4200 5050 60  0001 C CNN
+F 3 "" H 4200 5050 60  0001 C CNN
+	2    4200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L crossover -1
+U 1 1 5A6F5DEA
+P 4850 3450
+F 0 "-1" H 4850 3450 60  0001 C CNN
+F 1 "crossover" H 4850 3450 60  0001 C CNN
+F 2 "" H 4850 3450 60  0001 C CNN
+F 3 "" H 4850 3450 60  0001 C CNN
+	1    4850 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L crossover -2
+U 1 1 5A6F6203
+P 4950 3600
+F 0 "-2" H 4950 3600 60  0001 C CNN
+F 1 "crossover" H 4950 3600 60  0001 C CNN
+F 2 "" H 4950 3600 60  0001 C CNN
+F 3 "" H 4950 3600 60  0001 C CNN
+	1    4950 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L crossover -6
+U 1 1 5A6F66F7
+P 3700 4950
+F 0 "-6" H 3700 4950 60  0001 C CNN
+F 1 "crossover" H 3700 4950 60  0001 C CNN
+F 2 "" H 3700 4950 60  0001 C CNN
+F 3 "" H 3700 4950 60  0001 C CNN
+	1    3700 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L crossover -3
+U 1 1 5A6F7055
+P 3600 3700
+F 0 "-3" H 3600 3700 60  0001 C CNN
+F 1 "crossover" H 3600 3700 60  0001 C CNN
+F 2 "" H 3600 3700 60  0001 C CNN
+F 3 "" H 3600 3700 60  0001 C CNN
+	1    3600 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 5A6F73E6
+P 5250 3600
+F 0 "R6" V 5150 3600 50  0000 C CNN
+F 1 "100" V 5250 3600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5180 3600 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/219/MOS-16613.pdf" H 5250 3600 50  0001 C CNN
+	1    5250 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LT1260 U2
+U 3 1 5A6F7D75
+P 5800 4900
+F 0 "U2" H 5950 4900 60  0000 C CNN
+F 1 "LT1260" H 6000 5150 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 5800 4900 60  0001 C CNN
+F 3 "" H 5800 4900 60  0001 C CNN
+	3    5800 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LR LV1
+U 1 1 5A6F8AE6
+P 5650 3600
+F 0 "LV1" V 5550 3600 50  0000 C CNN
+F 1 "708n" V 5750 3550 50  0000 C CNN
+F 2 "footprints:143-11J12L" H 5650 3600 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/597/uni10-463412.pdf" H 5650 3600 50  0001 C CNN
+	1    5650 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C9
+U 1 1 5A6F9488
+P 5450 4000
+F 0 "C9" H 5475 4100 50  0000 L CNN
+F 1 "47n" H 5475 3900 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 5488 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 5450 4000 50  0001 C CNN
+	1    5450 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 5A6F9627
+P 5450 4150
+F 0 "#PWR06" H 5450 3900 50  0001 C CNN
+F 1 "Earth" H 5450 4000 50  0001 C CNN
+F 2 "" H 5450 4150 50  0001 C CNN
+F 3 "" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 5A6F9686
+P 5850 4000
+F 0 "C10" H 5875 4100 50  0000 L CNN
+F 1 "47n" H 5875 3900 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 5888 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fa_en-845009.pdf" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 5A6F9782
+P 5850 4150
+F 0 "#PWR07" H 5850 3900 50  0001 C CNN
+F 1 "Earth" H 5850 4000 50  0001 C CNN
+F 2 "" H 5850 4150 50  0001 C CNN
+F 3 "" H 5850 4150 50  0001 C CNN
+	1    5850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 5A6FA490
+P 6300 3600
+F 0 "RV2" V 6125 3600 50  0000 C CNN
+F 1 "10k Bleedoff" V 6200 3600 50  0000 C CNN
+F 2 "footprints:3362S-1-103LF" H 6300 3600 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/54/362-776956.pdf" H 6300 3600 50  0001 C CNN
+	1    6300 3600
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6450 3600
+$Comp
+L Earth #PWR08
+U 1 1 5A6FA8AC
+P 5250 4750
+F 0 "#PWR08" H 5250 4500 50  0001 C CNN
+F 1 "Earth" H 5250 4600 50  0001 C CNN
+F 2 "" H 5250 4750 50  0001 C CNN
+F 3 "" H 5250 4750 50  0001 C CNN
+	1    5250 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L crossover -4
+U 1 1 5A6FAD14
+P 6300 4800
+F 0 "-4" H 6300 4800 60  0001 C CNN
+F 1 "crossover" H 6300 4800 60  0001 C CNN
+F 2 "" H 6300 4800 60  0001 C CNN
+F 3 "" H 6300 4800 60  0001 C CNN
+	1    6300 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 5A6FB406
+P 2750 3250
+F 0 "#PWR09" H 2750 3000 50  0001 C CNN
+F 1 "Earth" H 2750 3100 50  0001 C CNN
+F 2 "" H 2750 3250 50  0001 C CNN
+F 3 "" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L USB_B J1
+U 1 1 5A6FD836
+P 7000 3350
+F 0 "J1" H 6800 3800 50  0000 L CNN
+F 1 "PWR IN" H 6800 3700 50  0000 L CNN
+F 2 "footprints:USB_B" H 7150 3300 50  0001 C CNN
+F 3 "" H 7150 3300 50  0001 C CNN
+	1    7000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR010
+U 1 1 5A6FDA73
+P 7950 3150
+F 0 "#PWR010" H 7950 3000 50  0001 C CNN
+F 1 "VDD" H 7950 3300 50  0000 C CNN
+F 2 "" H 7950 3150 50  0001 C CNN
+F 3 "" H 7950 3150 50  0001 C CNN
+	1    7950 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A6FDB16
+P 7800 3400
+F 0 "R1" V 7880 3400 50  0000 C CNN
+F 1 "470" V 7800 3400 50  0000 C CNN
+F 2 "" V 7730 3400 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/219/MOS-16613.pdf" H 7800 3400 50  0001 C CNN
+	1    7800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A6FDB71
+P 7800 3700
+F 0 "D1" H 7800 3800 50  0000 C CNN
+F 1 "LED" H 7800 3600 50  0000 C CNN
+F 2 "" H 7800 3700 50  0001 C CNN
+F 3 "" H 7800 3700 50  0001 C CNN
+	1    7800 3700
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7300 3350
+NoConn ~ 7300 3450
+$Comp
+L Earth #PWR011
+U 1 1 5A6FDC19
+P 6950 3850
+F 0 "#PWR011" H 6950 3600 50  0001 C CNN
+F 1 "Earth" H 6950 3700 50  0001 C CNN
+F 2 "" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR012
+U 1 1 5A6FDDFC
+P 7800 3850
+F 0 "#PWR012" H 7800 3600 50  0001 C CNN
+F 1 "Earth" H 7800 3700 50  0001 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR013
+U 1 1 5A6FE32E
+P 7800 2750
+F 0 "#PWR013" H 7800 2500 50  0001 C CNN
+F 1 "Earth" H 7800 2600 50  0001 C CNN
+F 2 "" H 7800 2750 50  0001 C CNN
+F 3 "" H 7800 2750 50  0001 C CNN
+	1    7800 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Antenna AE1
+U 1 1 5A6FF409
+P 6000 3300
+F 0 "AE1" H 5925 3375 50  0000 R CNN
+F 1 "Antenna" H 5925 3300 50  0000 R CNN
+F 2 "footprints:mast" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR014
+U 1 1 5A6FF774
+P 6300 3450
+F 0 "#PWR014" H 6300 3200 50  0001 C CNN
+F 1 "Earth" H 6300 3300 50  0001 C CNN
+F 2 "" H 6300 3450 50  0001 C CNN
+F 3 "" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C1
+U 1 1 5A7000CD
+P 7800 2900
+F 0 "C1" H 7825 3000 50  0000 L CNN
+F 1 "2200u" H 7825 2800 50  0000 L CNN
+F 2 "footprints:EEU-FS0J332B" H 7838 2750 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/315/ABA0000C1255-1128316.pdf" H 7800 2900 50  0001 C CNN
+	1    7800 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L VEE #PWR015
+U 1 1 5A700ED2
+P 8050 4900
+F 0 "#PWR015" H 8050 4750 50  0001 C CNN
+F 1 "VEE" H 8050 5050 50  0000 C CNN
+F 2 "" H 8050 4900 50  0001 C CNN
+F 3 "" H 8050 4900 50  0001 C CNN
+	1    8050 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 5A700F2B
+P 8000 5150
+F 0 "C3" H 8025 5250 50  0000 L CNN
+F 1 "1u" H 8025 5050 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 8038 5000 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fg_en-775693.pdf" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR016
+U 1 1 5A70117E
+P 8000 5300
+F 0 "#PWR016" H 8000 5050 50  0001 C CNN
+F 1 "Earth" H 8000 5150 50  0001 C CNN
+F 2 "" H 8000 5300 50  0001 C CNN
+F 3 "" H 8000 5300 50  0001 C CNN
+	1    8000 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 5350
+$Comp
+L Earth #PWR017
+U 1 1 5A7015C2
+P 7300 5350
+F 0 "#PWR017" H 7300 5100 50  0001 C CNN
+F 1 "Earth" H 7300 5200 50  0001 C CNN
+F 2 "" H 7300 5350 50  0001 C CNN
+F 3 "" H 7300 5350 50  0001 C CNN
+	1    7300 5350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6850 5000
+$Comp
+L VDD #PWR018
+U 1 1 5A7016E2
+P 6750 4800
+F 0 "#PWR018" H 6750 4650 50  0001 C CNN
+F 1 "VDD" H 6750 4950 50  0000 C CNN
+F 2 "" H 6750 4800 50  0001 C CNN
+F 3 "" H 6750 4800 50  0001 C CNN
+	1    6750 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5A70176E
+P 6800 4550
+F 0 "C2" H 6825 4650 50  0000 L CNN
+F 1 "1u" H 6825 4450 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 6838 4400 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fg_en-775693.pdf" H 6800 4550 50  0001 C CNN
+	1    6800 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR019
+U 1 1 5A701A39
+P 6800 4400
+F 0 "#PWR019" H 6800 4150 50  0001 C CNN
+F 1 "Earth" H 6800 4250 50  0001 C CNN
+F 2 "" H 6800 4400 50  0001 C CNN
+F 3 "" H 6800 4400 50  0001 C CNN
+	1    6800 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 5A701ACA
+P 7400 4250
+F 0 "C8" H 7410 4320 50  0000 L CNN
+F 1 "1u" H 7410 4170 50  0000 L CNN
+F 2 "footprints:FA16C0G1H473JNU00" H 7400 4250 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/400/eadmlcc_halogenfree_fg_en-775693.pdf" H 7400 4250 50  0001 C CNN
+	1    7400 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV3
+U 1 1 5A704DCA
+P 6400 5450
+F 0 "RV3" V 6225 5450 50  0000 C CNN
+F 1 "10k Trigger" V 6300 5450 50  0000 C CNN
+F 2 "footprints:3362S-1-103LF" H 6400 5450 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/54/362-776956.pdf" H 6400 5450 50  0001 C CNN
+	1    6400 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR020
+U 1 1 5A705260
+P 6550 5450
+F 0 "#PWR020" H 6550 5200 50  0001 C CNN
+F 1 "Earth" H 6550 5300 50  0001 C CNN
+F 2 "" H 6550 5450 50  0001 C CNN
+F 3 "" H 6550 5450 50  0001 C CNN
+	1    6550 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LT1260 U2
+U 4 1 5A707CF0
+P 8600 4300
+F 0 "U2" H 8850 4150 60  0000 C CNN
+F 1 "LT1260" H 8800 4550 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 8600 4300 60  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/609/12596fas-1267346.pdf" H 8600 4300 60  0001 C CNN
+	4    8600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR021
+U 1 1 5A708C4E
+P 8550 4850
+F 0 "#PWR021" H 8550 4600 50  0001 C CNN
+F 1 "Earth" H 8550 4700 50  0001 C CNN
+F 2 "" H 8550 4850 50  0001 C CNN
+F 3 "" H 8550 4850 50  0001 C CNN
+	1    8550 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR022
+U 1 1 5A709C25
+P 8450 3400
+F 0 "#PWR022" H 8450 3150 50  0001 C CNN
+F 1 "Earth" H 8450 3250 50  0001 C CNN
+F 2 "" H 8450 3400 50  0001 C CNN
+F 3 "" H 8450 3400 50  0001 C CNN
+	1    8450 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 4750 9150 4800
+Wire Wire Line
+	4850 3050 4850 3600
+Wire Wire Line
+	3800 3050 4850 3050
+Wire Wire Line
+	3800 3100 3800 3050
+Wire Wire Line
+	6400 4800 6400 5300
+Connection ~ 6800 4800
+Wire Wire Line
+	6750 4800 6850 4800
+Wire Wire Line
+	6800 4700 6800 4800
+Wire Wire Line
+	7250 4450 7300 4450
+Wire Wire Line
+	7250 4250 7250 4450
+Wire Wire Line
+	7300 4250 7250 4250
+Wire Wire Line
+	7550 4250 7500 4250
+Wire Wire Line
+	7550 4450 7550 4250
+Wire Wire Line
+	7500 4450 7550 4450
+Connection ~ 8000 4900
+Wire Wire Line
+	7950 4900 8050 4900
+Wire Wire Line
+	8000 5000 8000 4900
+Connection ~ 7800 3150
+Wire Wire Line
+	7700 3150 7950 3150
+Wire Wire Line
+	7800 3050 7800 3250
+Connection ~ 6950 3800
+Wire Wire Line
+	6950 3850 6950 3800
+Wire Wire Line
+	7000 3800 7000 3750
+Wire Wire Line
+	6900 3800 7000 3800
+Wire Wire Line
+	6900 3750 6900 3800
+Wire Wire Line
+	6350 4800 6400 4800
+Wire Wire Line
+	6200 4800 6250 4800
+Wire Wire Line
+	6000 3500 6000 3850
+Wire Wire Line
+	6000 3850 6300 3850
+Wire Wire Line
+	6300 3850 6300 5000
+Wire Wire Line
+	6300 5000 6200 5000
+Connection ~ 6000 3600
+Connection ~ 5850 3600
+Wire Wire Line
+	8850 4750 8850 4800
+Wire Wire Line
+	8700 4750 9150 4750
+Wire Wire Line
+	9000 4750 9000 4700
+Connection ~ 9000 4750
+Wire Wire Line
+	9150 5050 9150 5000
+Wire Wire Line
+	8850 5050 9150 5050
+Wire Wire Line
+	8850 5050 8850 5000
+Wire Wire Line
+	9000 5050 9000 5100
+Connection ~ 9000 5050
+Wire Wire Line
+	8300 3750 8600 3750
+Wire Wire Line
+	8300 3700 8300 3750
+Wire Wire Line
+	8300 3500 8300 3450
+Wire Wire Line
+	8300 3450 8600 3450
+Wire Wire Line
+	8450 3750 8450 3800
+Connection ~ 8450 3750
+Connection ~ 8450 3450
+Connection ~ 3800 3500
+Wire Wire Line
+	3800 3500 3800 3400
+Wire Wire Line
+	3550 3500 3800 3500
+Wire Wire Line
+	3600 3300 3550 3300
+Connection ~ 3600 3500
+Wire Wire Line
+	3250 3300 3250 3350
+Wire Wire Line
+	3250 3350 3150 3350
+Wire Wire Line
+	3250 3500 3250 3450
+Wire Wire Line
+	3250 3450 3150 3450
+Wire Wire Line
+	4750 3450 4800 3450
+Wire Wire Line
+	4750 3600 4900 3600
+Connection ~ 4850 3600
+Wire Wire Line
+	4900 3450 4950 3450
+Wire Wire Line
+	3750 4950 3800 4950
+Wire Wire Line
+	3800 5150 3700 5150
+Wire Wire Line
+	3700 5150 3700 3700
+Wire Wire Line
+	3650 3700 3800 3700
+Wire Wire Line
+	3050 3800 3050 3850
+Wire Wire Line
+	3050 3850 3100 3850
+Wire Wire Line
+	3250 3700 3550 3700
+Connection ~ 3700 3700
+Wire Wire Line
+	5450 3850 5450 3600
+Wire Wire Line
+	5400 3600 5500 3600
+Connection ~ 5450 3600
+Wire Wire Line
+	5850 3850 5850 3600
+Wire Wire Line
+	5800 3600 6150 3600
+Wire Wire Line
+	8700 4650 8700 4750
+Connection ~ 8850 4750
+Wire Wire Line
+	8600 4800 8600 4700
+Wire Wire Line
+	8500 4800 8600 4800
+Wire Wire Line
+	8500 4800 8500 4750
+Wire Wire Line
+	8550 4800 8550 4850
+Connection ~ 8550 4800
+Wire Wire Line
+	8600 3700 8600 3900
+Connection ~ 8600 3750
+Wire Wire Line
+	8600 3450 8600 3500
+Wire Wire Line
+	8450 3400 8450 3450
+$Comp
+L LT1260 U2
+U 1 1 5A70B301
+P 4200 3600
+F 0 "U2" H 4450 3450 60  0000 C CNN
+F 1 "LT1260" H 4400 3850 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 4200 3600 60  0001 C CNN
+F 3 "" H 4200 3600 60  0001 C CNN
+	1    4200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TC7660H U1
+U 1 1 5A70C6BD
+P 7400 4900
+F 0 "U1" H 7400 4900 60  0000 C CNN
+F 1 "TC7660H" H 7750 5250 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 7400 4900 60  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/268/21466a-259168.pdf" H 7400 4900 60  0001 C CNN
+	1    7400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPST SW1
+U 1 1 5A70DF07
+P 7500 3150
+F 0 "SW1" H 7500 3275 50  0000 C CNN
+F 1 "Pwr Sw" H 7500 3050 50  0000 C CNN
+F 2 "footprints:switch_panel" H 7500 3150 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/140/100-1079940.pdf" H 7500 3150 50  0001 C CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4950 3650 4950
+Wire Wire Line
+	3600 3300 3600 5150
+$Comp
+L Earth #PWR023
+U 1 1 5A70E4F3
+P 4750 4900
+F 0 "#PWR023" H 4750 4650 50  0001 C CNN
+F 1 "Earth" H 4750 4750 50  0001 C CNN
+F 2 "" H 4750 4900 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 5450 6250 5450
+Wire Wire Line
+	4750 5450 4750 5050
+Wire Wire Line
+	5250 4900 4950 4900
+Wire Wire Line
+	4950 4900 4950 3450
+$Comp
+L R R5
+U 1 1 5A70E95A
+P 3600 5300
+F 0 "R5" V 3680 5300 50  0000 C CNN
+F 1 "1k" V 3600 5300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3530 5300 50  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/219/MOS-16613.pdf" H 3600 5300 50  0001 C CNN
+	1    3600 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 4950
+Connection ~ 4750 5450
+Wire Wire Line
+	5000 3600 5100 3600
+$EndSCHEMATC
