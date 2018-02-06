@@ -1,8 +1,43 @@
-#title {
-    text-align: center;
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    background-color: black
 }
 
-#subtitle {
-    text-align: center;
-    font: italic;
+#foreground {
+    border-color: white;
+    border-style: solid;
+    color: white;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#header {
+    width: 100%;
+}
+
+p {
+    width: 96%;
+    margin-left: 2%;
+}
+
+h1 {
+    width: 96%;
+    margin-left: 2%;
+}
+
+a:link {
+    color: #00AAAA;
+}
+
+a:visited {
+    color: #009999;
+}
+
+a:hover {
+    color: #00FFFF;
+}
+
+a:active {
+    color: white;
 }
